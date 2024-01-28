@@ -22,18 +22,29 @@ module.exports = {
       '8xl': ['6rem', '1'],
       '9xl': ['8rem', '1'],
     },
+
+    colors: {
+      'navyblue': '#233D4D',
+      'orangerust': '#D28F56',
+      'orangebright': '#FE7F2D',
+      'yellowbright': '#FCCA46',
+      'offwhite': '#FFFEF9',
+      'creamy': '#F0EBD8',
+    },
+
     fontFamily: {
-      'sans': ['proxima-nova', 'ui-sans-serif'],
-      'sans-tight': ['proxima-nova-condensed', 'ui-sans-serif'],
-      'mono': ['Inconsolata', 'ui-mono', 'monospace'],
-      'soft': ['proxima-soft', 'ui-sans-serif'],
-      'soft-tight': ['proxima-soft-condensed', 'ui-sans-serif'],
+      'body-sans': ['archivo', 'ui-sans-serif'],
+      'header-sans': ['bebas-neue', 'ui-sans-serif'],
+      'serif': ['playfair-display', 'ui-serif'],
     },
     extend: {
       lineHeight: {
         'tight': '.85',
         'snug': '.95',
         '12': '3rem',
+        '13': '3.25rem',
+        '14': '3.5rem',
+        '15': '3.75rem',
       },
       spacing: {
         '5p': '5%',
@@ -47,6 +58,10 @@ module.exports = {
         '70': '70vh',
         '60': '60vh',
         '50': '50vh',
+        '40': '40vh',
+        '30': '30vh',
+        '20': '20vh',
+        '10': '10vh',
       },
       aspectRatio: {
         'landscape': '3 / 2',

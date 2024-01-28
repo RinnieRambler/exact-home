@@ -6,27 +6,113 @@ layout: default
 
 <!---------Image banner ------>
 
-<section>
-    <img class="opacity-70" src="" alt="" >
+<section class="min-h-90">
+    <div style="background-image:url(/assets/images/main-banner-image.jpg)" class="min-h-screen bg-cover bg-[65%_65%] bg-no-repeat opacity-60">
+    </div>
 </section>
 
 <!---------- quote banner --------->
 
+<section class="">
+    <div class="bg-orangerust min-h-50 flex justify-items-center">
+        <h3 class=" font-serif italic font-semibold text-creamy text-center text-5xl leading-15">Suppliers of quality home &<br> garden furniture since 2017</h3>
+    </div>
+</section>
+
 <!-------- scroll animation info banner ------>
+<section>
+    <div class="bg-yellowbright min-h-10 font-header-sans text-navyblue">
+        <h2 class="scroll-text">Call us direct - 0800 878 6050</h2>
+        <h2 class="scroll-text">Exclusive offers</h2>
+        <h2 class="scroll-text">Call us direct - 0800 878 6050</h2>
+        <h2 class="scroll-text">New items added daily</h2>
+    </div>
+</section>
 
 <!--------- about section --------->
 
-<!--------- facts ection ------->
+<section class="p-5p">
+    <h2 class="font-header-sans text-7xl text-center pb-8">
+        About
+    </h2>
+    <div class="font-body-sans grid grid-cols-2 space-x-6">
+        <div class="">
+            <p>As a family owned and operated business we take pride in offering a collection of exceptional, high quality home & garden furniture, as well as homeware items - but our commitment goes beyond that - it extends to providing a professional, reliable & personalised customer service experience.</p>
+
+            <p>Since 2017, our knowledgeable team have been offering expert advice - we are here to assist you, ensuring a seamless journey from selection to delivery.</p>
+
+            <p>We want you to be happy with your purchase & your satisfaction is a top priority.</p>
+        </div>
+        <div>
+            <p>We pride ourselves on supplying high quality items, each one individually checked before making its way to you and a personalised delivery service to ensure it arrives in the same top condition it left our warehouse in; delivering not just high-quality items to elevate your space, but unbeatable customer service to match.</p>
+
+            <p>We invite you to explore our collection on our eBay store or to reach out to us directly using the contact details below.</p>
+        </div>
+    </div>
+</section>
+
+<!--------- facts section ------->
+
+<section class="bg-navyblue p-5p">
+    <div class="grid grid-cols-4">
+        <div>
+            <h2 class="text-creamy">established<br><span class="text-yellowbright">2017</span></h2>
+        </div>
+        <div>
+            <h2 class="text-creamy">independently<br><span class="text-yellowbright">family owned</span></h2>
+        </div>
+        <div>
+            <h2 class="text-creamy">nationwide *<br><span class="text-yellowbright">delivery</span></h2>
+        </div>
+        <div>
+            <h2 class="text-creamy">local collection<br><span class="text-yellowbright">available</span></h2>
+        </div>
+    </div>
+</section>
 
 <!---------- ebay store section -------->
 
+<section class="min-h-30">
+    <div style="background-image:url(/assets/images/ebay-bg-image.jpg)" class="min-h-screen bg-cover bg-[65%_65%] bg-no-repeat opacity-60">
+    </div>
+</section>
+
 <!------ to be listed section --------->
+
+<section class="text-center">
+    <div class="bg-navyblue">
+        <p class="text-creamy">Direct payments welcome & all major credit / debit cards accepted.</p>
+    </div>
+    <div class="bg-offwhite border-b-[1.5rem] border-b-navyblue py-5p font-serif">
+        <h3><span class="text-orangebright">Additional,</span> yet to be listed, items may be available & items can also be <span class="text-orangebright">sourced</span> to meet your individual needs.</h3>
+
+        <h3><span class="text-orangebright">Contact</span> us direct on our freephone number 
+            for more info.</h3>
+    </div>
+    
+</section>
 
 <!---------- testimonials section ---------->
 
+<section>
+    <div class="p-5p text-center bg-orangerust">
+        <h2 class="py-5 text-navyblue">What our <span class="text-creamy">customers</span> say</h2>
+        <div class="slider text-center">
+        {% for item in site.data.testimonials %}
+        <div class="m-4">
+            <div class="py-5p">
+                <div>
+                    <p class="pt-5p">{{item.testimonial}}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        </div>
+    </div>
+
 <!----------- contact section --------->
 
-<section>
+<section class="min-h-50">
     <div>
         <div>
             <h3>Contact</h3>
