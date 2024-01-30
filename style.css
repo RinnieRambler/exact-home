@@ -12,3 +12,14 @@
 html {
   scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
 }
+
+p {
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.025em;
+  line-height: 2rem;
+}
+
+p:last-child {
+  margin-bottom:0;
+}

@@ -23,21 +23,21 @@ module.exports = {
       '9xl': ['8rem', '1'],
     },
 
-    colors: {
-      'navyblue': '#233D4D',
-      'orangerust': '#D28F56',
-      'orangebright': '#FE7F2D',
-      'yellowbright': '#FCCA46',
-      'offwhite': '#FFFEF9',
-      'creamy': '#F0EBD8',
-    },
-
     fontFamily: {
       'body-sans': ['archivo', 'ui-sans-serif'],
-      'header-sans': ['bebas-neue', 'ui-sans-serif'],
-      'serif': ['playfair-display', 'ui-serif'],
+      'header-sans': ['bebas neue', 'ui-sans-serif'],
+      'serif': ['playfair display', 'ui-serif'],
     },
+
     extend: {
+      colors: {
+        'navyblue': '#233D4D',
+        'orangerust': '#D28F56',
+        'orangebright': '#FE7F2D',
+        'yellowbright': '#FCCA46',
+        'offwhite': '#FFFEF9',
+        'creamy': '#F0EBD8',
+      },
       lineHeight: {
         'tight': '.85',
         'snug': '.95',
@@ -45,6 +45,9 @@ module.exports = {
         '13': '3.25rem',
         '14': '3.5rem',
         '15': '3.75rem',
+        '16': '4rem',
+        '20': '5rem',
+        '24': '6rem',
       },
       spacing: {
         '5p': '5%',
@@ -60,6 +63,7 @@ module.exports = {
         '50': '50vh',
         '40': '40vh',
         '30': '30vh',
+        '25': '25vh',
         '20': '20vh',
         '10': '10vh',
       },

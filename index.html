@@ -14,40 +14,61 @@ layout: default
 <!---------- quote banner --------->
 
 <section class="">
-    <div class="bg-orangerust min-h-50 flex justify-items-center">
-        <h3 class=" font-serif italic font-semibold text-creamy text-center text-5xl leading-15">Suppliers of quality home &<br> garden furniture since 2017</h3>
+    <div class="bg-orangerust min-h-50 flex items-center justify-center">
+        <h3 class=" font-serif italic font-semibold text-white text-center text-6xl leading-20">Suppliers of quality home &<br> garden furniture since 2017</h3>
     </div>
 </section>
 
 <!-------- scroll animation info banner ------>
-<section>
-    <div class="bg-yellowbright min-h-10 font-header-sans text-navyblue">
-        <h2 class="scroll-text">Call us direct - 0800 878 6050</h2>
-        <h2 class="scroll-text">Exclusive offers</h2>
-        <h2 class="scroll-text">Call us direct - 0800 878 6050</h2>
-        <h2 class="scroll-text">New items added daily</h2>
+
+<section class="flex relative overflow-hidden bg-yellowbright">
+    <div class=" min-h-10 font-header-sans text-navyblue flex items-center justify-start whitespace-nowrap">
+        <h2 class="scroll-text text-3xl px-36">
+            <span>Call us direct - 0800 878 6050</span>
+        </h2>
+        <h2 class="scroll-text text-3xl pr-36">
+            <span>Exclusive offers</span>
+        </h2>
+        <h2 class="scroll-text text-3xl pr-24">
+            <span>Call us direct - 0800 878 6050</span>
+        </h2>
+        <h2 class="scroll-text text-3xl">
+            <span>New items added daily</span>
+        </h2>
+        <h2 class="scroll-text text-3xl px-36">
+            <span>Call us direct - 0800 878 6050</span>
+        </h2>
+        <h2 class="scroll-text text-3xl pr-36">
+             <span>Exclusive offers</span>
+        </h2>
+        <h2 class="scroll-text text-3xl pr-24">
+             <span>Call us direct - 0800 878 6050</span>
+        </h2>
+        <h2 class="scroll-text text-3xl">
+            <span>New items added daily</span>
+        </h2>
     </div>
 </section>
 
 <!--------- about section --------->
 
-<section class="p-5p">
-    <h2 class="font-header-sans text-7xl text-center pb-8">
-        About
+<section class="p-10p">
+    <h2 class="font-header-sans text-7xl text-center text-navyblue">
+        About us
     </h2>
-    <div class="font-body-sans grid grid-cols-2 space-x-6">
-        <div class="">
+    <div class="font-body-sans grid grid-cols-2 gap-x-24 p-10p">
+        <div class="space-y-4">
             <p>As a family owned and operated business we take pride in offering a collection of exceptional, high quality home & garden furniture, as well as homeware items - but our commitment goes beyond that - it extends to providing a professional, reliable & personalised customer service experience.</p>
-
             <p>Since 2017, our knowledgeable team have been offering expert advice - we are here to assist you, ensuring a seamless journey from selection to delivery.</p>
-
             <p>We want you to be happy with your purchase & your satisfaction is a top priority.</p>
         </div>
         <div>
             <p>We pride ourselves on supplying high quality items, each one individually checked before making its way to you and a personalised delivery service to ensure it arrives in the same top condition it left our warehouse in; delivering not just high-quality items to elevate your space, but unbeatable customer service to match.</p>
-
-            <p>We invite you to explore our collection on our eBay store or to reach out to us directly using the contact details below.</p>
+            <p>We invite you to explore our collection on our <a href="#" class="text-orangebright underline">eBay store</a> or to reach out to us directly using the contact details below.</p>
         </div>
+    </div>
+    <div class="justify-center">
+        <a href="#" class="bg-orangerust text-navyblue text-3xl font-header-sans px-16 py-3 m-2p ">Contact us</a>
     </div>
 </section>
 
@@ -94,10 +115,10 @@ layout: default
 
 <!---------- testimonials section ---------->
 
-<section>
-    <div class="p-5p text-center bg-orangerust">
+<section class="">
+    <div class="p-5p min-h-700 text-center bg-orangerust">
         <h2 class="py-5 text-navyblue">What our <span class="text-creamy">customers</span> say</h2>
-        <div class="slider text-center">
+        <div class="slider text-center min-h-30">
         {% for item in site.data.testimonials %}
         <div class="m-4">
             <div class="py-5p">
