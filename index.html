@@ -68,53 +68,61 @@ layout: default
         </div>
     </div>
     <div class="justify-center">
-        <a href="#" class="bg-orangerust text-navyblue text-3xl font-header-sans px-16 py-3 m-2p ">Contact us</a>
+        <a href="#" class="bg-orangerust text-navyblue text-3xl font-header-sans px-16 py-3 m-2p flex items-center justify-center">Contact us</a>
     </div>
 </section>
 
-<!--------- NEED TO POSITION * PART - POSITION ABSOLUTE? ------->
 <!--------- facts section ------->
 
-<section class="bg-navyblue p-5p border-y-8 border-orangerust">
-    <div class="grid grid-cols-4 text-center text-3xl">
-        <div>
-            <h2><span class="text-creamy font-serif italic">established</span><br><span class="text-yellowbright font-header-sans">2017</span></h2>
-        </div>
-        <div>
-            <h2><span class="text-creamy font-serif italic">independently</span><br><span class="text-yellowbright font-header-sans">family owned</span></h2>
-        </div>
-        <div>
-            <h2><span class="text-creamy font-serif italic">nationwide *</span><br><span class="text-yellowbright font-header-sans">delivery</span></h2>
-        </div>
-        <div>
-            <h2><span class="text-creamy font-serif italic">local collection</span><br><span class="text-yellowbright font-header-sans">available</span></h2>
+<section class="bg-navyblue px-5p pt-5p border-y-8 border-orangerust">
+    <div class="text-center text-3xl">
+        <div class="grid grid-cols-4 p-2p">
+            <div>
+                <h2><span class="text-creamy font-serif italic">established</span><br><span class="text-yellowbright font-header-sans">2017</span></h2>
+            </div>
+            <div>
+                <h2><span class="text-creamy font-serif italic">independently</span><br><span class="text-yellowbright font-header-sans">family owned</span></h2>
+            </div>
+            <div>
+                <h2><span class="text-creamy font-serif italic">nationwide *</span><br><span class="text-yellowbright font-header-sans">delivery</span></h2>
+            </div>
+            <div>
+                <h2><span class="text-creamy font-serif italic">local collection</span><br><span class="text-yellowbright font-header-sans">available</span></h2>
+            </div>
         </div>
     </div>
-    <div class="flex justify-items-end">
-        <h4 class="text-creamy italic ">*(exc. highlands / islands)</h4>
+    <div class="grid place-items-end pt-2p pb-1p pl-2p ">
+        <p class="text-creamy italic text-xs">*(exc. highlands / islands)</p> 
     </div>
 </section>
 
 <!---------- ebay store section -------->
 
-<section class="min-h-30">
-    <div style="background-image:url(/assets/images/ebay-bg-image.jpg)" class="min-h-screen bg-cover bg-[65%_65%] bg-no-repeat opacity-60">
+<section class="min-h-30 font-header-sans  text-center">
+    <div style="background-image:url(/assets/images/ebay-bg-image.jpg)" class="min-h-screen bg-cover bg-center bg-no-repeat flex flex-grow items-center justify-center">
+        <div class="min-w-full">
+                <h2 class="text-7xl text-navyblue tracking-wide pb-3p pt-1p">Our <span class="text-orangebright">ebay</span> store</h2>
+                <a href="https://www.ebay.co.uk/str/exacthomeandleisure" class="text-navyblue text-3xl underline bg-yellowbright px-16 py-2 m-2p tracking-wide">Click here</a>
+        </div>
     </div>
 </section>
 
-<!------ to be listed section --------->
+
+<!------ credit card section --------->
 
 <section class="text-center">
-    <div class="bg-navyblue">
-        <p class="text-creamy">Direct payments welcome & all major credit / debit cards accepted.</p>
+    <div class="bg-navyblue min-h-10">
+        <p class="text-creamy p-2p tracking-widest">Direct payments welcome & all major credit / debit cards accepted.</p>
     </div>
-    <div class="bg-offwhite border-b-[1.5rem] border-b-navyblue py-5p font-serif">
-        <h3><span class="text-orangebright">Additional,</span> yet to be listed, items may be available & items can also be <span class="text-orangebright">sourced</span> to meet your individual needs.</h3>
+</section>
 
-        <h3><span class="text-orangebright">Contact</span> us direct on our freephone number 
-            for more info.</h3>
+<!------ TEXT NEEDS TO NOT SPREAD ACROSS ENTIRE SCREEN --------->
+<!------ to be listed section --------->
+<section>
+    <div class="max-w-50 border-b-[1.5rem] border-b-navyblue py-5p px-10p bg-white text-navyblue text-center font-serif font-semibold ">
+        <p class="text-2xl"><span class="text-orangebright italic ">Additional,</span> yet to be listed, items may be available & items can also be <span class="text-orangebright italic ">sourced</span> to meet your individual needs.</p>
+        <p class="text-2xl"><span class="text-orangebright italic ">Contact</span> us direct on our freephone number for more info.</p>
     </div>
-    
 </section>
 
 <!---------- testimonials section ---------->
@@ -135,13 +143,22 @@ layout: default
         </div>
     </div>
 
+<!----------- MESSAGE BOX NEEDS TO BE EXPANDABLE AND TEXT START AT TOP LEFT CORNER --------->
 <!----------- contact section --------->
 
-<section class="min-h-50">
-    <div>
+<section class="min-h-50 p-10p text-navyblue">
+    <div class="grid grid-cols-2 space-x-32">
         <div>
-            <h3>Contact</h3>
-             
+            <h3 class="font-header-sans text-7xl  pb-5p">Contact</h3>
+             <form>
+                <label for="name">Name</label>
+                    <input class="bg-white border-2 border-yellowbright py-1 px-2 w-full mb-5" type="text" id="name" name="name">
+                    <label for="email">Email</label>
+                    <input class="bg-white border-2 border-yellowbright py-1 px-2 w-full mb-5" type="email" id="email" name="email">
+                    <label for="message">Message</label>
+                    <input class="bg-white border-2 border-yellowbright py-6 px-2 w-full mb-5" type="text" id="message" name="message">
+                    <input class="bg-yellowbright text-navyblue py-1 px-10 ml-auto" type="submit" value="send">
+             </form>
         </div>
         <div>
             <div>
@@ -156,7 +173,7 @@ layout: default
                 </p>
             </div>
             <div>
-                <nav></nav>
+                <a></a>
             </div>
         </div>
     </div>
