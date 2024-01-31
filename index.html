@@ -98,7 +98,7 @@ layout: default
 
 <!---------- ebay store section -------->
 
-<section class="min-h-30 font-header-sans  text-center">
+<section class="min-h-30 font-header-sans text-center">
     <div style="background-image:url(/assets/images/ebay-bg-image.jpg)" class="min-h-screen bg-cover bg-center bg-no-repeat flex flex-grow items-center justify-center">
         <div class="min-w-full">
                 <h2 class="text-7xl text-navyblue tracking-wide pb-3p pt-1p">Our <span class="text-orangebright">ebay</span> store</h2>
@@ -131,16 +131,18 @@ layout: default
 <section class="min-h-30">
     <div class="p-5p min-h-700 text-center bg-orangerust">
         <h2 class="py-5 text-navyblue text-5xl font-serif ">What our <span class="text-white font-serif italic font-semibold">customers</span> say</h2>
-        <div class="slider text-center max-w-3xl">
-        {% for item in site.data.testimonials %}
-        <div class="m-4">
-            <div class="p-5p">
-                <div class="">
-                    <p class="">{{item.testimonial}}</p>
+        <div class="flex flex-grow items-center justify-center">
+            <div class="slider text-center max-w-3xl ">
+            {% for item in site.data.testimonials %}
+            <div class="m-4">
+                <div class="p-5p">
+                    <div class="">
+                        <p class="text-white">{{item.testimonial}}</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        {% endfor %}
+            {% endfor %}
+            </div>
         </div>
     </div>
 
@@ -150,7 +152,7 @@ layout: default
 <section class="min-h-50 p-10p text-navyblue">
     <div class="grid grid-cols-2 space-x-32">
         <div>
-            <h3 class="font-header-sans text-7xl  pb-5p">Contact</h3>
+            <h3 class="font-header-sans text-7xl pb-5p">Contact</h3>
              <form>
                 <label for="name">Name</label>
                     <input class="bg-white border-2 border-yellowbright py-1 px-2 w-full mb-5" type="text" id="name" name="name">
@@ -162,7 +164,7 @@ layout: default
              </form>
         </div>
         <div>
-            <div>
+            <div class="pt-20p">
                 <p>
                 We are always happy to have a chat or to answer any questions.
                 </p>
@@ -173,8 +175,10 @@ layout: default
                     Please reach out either by phone or our contact form and someone will get back to you as soon as possible.
                 </p>
             </div>
-            <div>
-                <a></a>
+            <div class="pt-5p">
+                <p><span class="fa-solid fa-circle-envelope"></span><a href="mailto:enquiries@exacthomeandleisure.co.uk">enquiries@exacthomeandleisure.co.uk</a></p>
+                <p><a href="https://api.whatsapp.com/send?phone=07554773242">Whatsapp / text: 07554 773 242</a></p>
+                <p><a href="tel:08008786050">Freephone: 0800 878 6050</a></p>
             </div>
         </div>
     </div>
