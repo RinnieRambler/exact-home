@@ -125,17 +125,18 @@ layout: default
     </div>
 </section>
 
+<!---------- CHANGE ARROWS WIDTH OF TTESTIMONIAL TEXT ---------->
 <!---------- testimonials section ---------->
 
-<section class="">
+<section class="min-h-30">
     <div class="p-5p min-h-700 text-center bg-orangerust">
-        <h2 class="py-5 text-navyblue">What our <span class="text-creamy">customers</span> say</h2>
-        <div class="slider text-center min-h-30">
+        <h2 class="py-5 text-navyblue text-5xl font-serif ">What our <span class="text-white font-serif italic font-semibold">customers</span> say</h2>
+        <div class="slider text-center max-w-3xl">
         {% for item in site.data.testimonials %}
         <div class="m-4">
-            <div class="py-5p">
-                <div>
-                    <p class="pt-5p">{{item.testimonial}}</p>
+            <div class="p-5p">
+                <div class="">
+                    <p class="">{{item.testimonial}}</p>
                 </div>
             </div>
         </div>
