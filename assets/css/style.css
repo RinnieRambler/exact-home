@@ -537,10 +537,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-orangebright {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 127 45 / var(--tw-bg-opacity));
-}
 .bg-cover {
   background-size: cover;
 }
@@ -637,9 +633,6 @@ video {
 .pb-5p {
   padding-bottom: 5%;
 }
-.pt-15p {
-  padding-top: 15%;
-}
 .pt-20p {
   padding-top: 20%;
 }
@@ -680,10 +673,6 @@ video {
 }
 .text-2xl {
   font-size: 1.5rem;
-  line-height: 1.2;
-}
-.text-lg {
-  font-size: 1.125rem;;
   line-height: 1.2;
 }
 .font-semibold {
