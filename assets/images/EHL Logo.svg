@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 907.09 982.46">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 80px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #f0ebd8;
+      }
+
+      .cls-1, .cls-3 {
+        font-family: BebasNeue-Regular, 'Bebas Neue';
+      }
+
+      .cls-4 {
+        letter-spacing: .09em;
+      }
+
+      .cls-5 {
+        letter-spacing: .09em;
+      }
+
+      .cls-2 {
+        font-family: PlayfairDisplay-Regular, 'Playfair Display';
+        font-size: 24px;
+        letter-spacing: .09em;
+      }
+
+      .cls-6 {
+        letter-spacing: .09em;
+      }
+
+      .cls-3 {
+        fill: #d28f55;
+        font-size: 600px;
+      }
+    </style>
+  </defs>
+  <text/>
+  <text class="cls-3" transform="translate(115.45 625.79)"><tspan x="0" y="0">EHL</tspan></text>
+  <text class="cls-1" transform="translate(745.97 555.28) rotate(-89.75)"><tspan class="cls-6" x="0" y="0">ex</tspan><tspan class="cls-5" x="76.24" y="0">a</tspan><tspan class="cls-4" x="115.36" y="0">ct</tspan></text>
+  <text class="cls-2" transform="translate(777.62 552.69) rotate(-89.97)"><tspan x="0" y="0">HOME &amp; LEISURE</tspan></text>
+</svg>
