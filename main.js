@@ -1,3 +1,5 @@
+console.log("dan told me to write soemthing in here")
+
 $('.slider').slick({
     dots: true,
     infinite: true,
@@ -6,4 +8,3 @@ $('.slider').slick({
     adaptiveHeight: true
 });
 
-console.log("dan told me to write soemthing in here")
