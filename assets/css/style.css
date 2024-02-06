@@ -425,6 +425,10 @@ video {
 .m-4 {
   margin: 1rem;
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -470,6 +474,9 @@ video {
 .min-h-30 {
   min-height: 30vh;
 }
+.min-h-full {
+  min-height: 100%;
+}
 .w-full {
   width: 100%;
 }
@@ -481,6 +488,30 @@ video {
 }
 .max-w-3xl {
   max-width: 48rem;
+}
+.max-w-40 {
+  max-width: 40%;
+}
+.max-w-20 {
+  max-width: 20%;
+}
+.max-w-\[2\] {
+  max-width: 2;
+}
+.max-w-\[2rem\] {
+  max-width: 2rem;
+}
+.max-w-\[4rem\] {
+  max-width: 4rem;
+}
+.max-w-\[6rem\] {
+  max-width: 6rem;
+}
+.max-w-\[20rem\] {
+  max-width: 20rem;
+}
+.max-w-\[16rem\] {
+  max-width: 16rem;
 }
 .flex-grow {
   flex-grow: 1;
@@ -592,6 +623,9 @@ video {
 }
 .p-5p {
   padding: 5%;
+}
+.p-\[5vw\] {
+  padding: 5vw;
 }
 .px-36 {
   padding-left: 9rem;
@@ -804,20 +838,62 @@ p a:hover {
   z-index: 9999;
 }
 
+.slick-next:before, .slick-prev:before {
+  font-family: inherit;
+  font-size: 4rem;
+}
+
+
+:root {
+    --bannerBlockLength: 280px;
+    --bannerBlockTime: 2s;
+  }
+
+.tickerBanner{
+overflow-X: hidden;
+display: flex;
+flex-direction: row-reverse;
+text-align: center;
+}
+
+
+.tickerBanner h2{
+  display: inline-block;
+  padding: 1vw;
+  flex-shrink: 0;
+  position: relative;
+  animation: ticker 2s infinite linear;
+  animation-duration: var(--bannerBlockTime), 2s;
+}
+
+.tickerBanner:hover h2{
+  animation-play-state: paused;
+}
+
+
+@keyframes ticker {
+    from {left:0}
+    to   {left:var(--bannerBlockLength)}
+}
+
+
 .hover\:bg-navyblue:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(35 61 77 / var(--tw-bg-opacity));
 }
+
 
 .hover\:text-orangebright:hover {
   --tw-text-opacity: 1;
   color: rgb(254 127 45 / var(--tw-text-opacity));
 }
 
+
 .hover\:text-yellowbright:hover {
   --tw-text-opacity: 1;
   color: rgb(252 202 70 / var(--tw-text-opacity));
 }
+
 
 .hover\:opacity-80:hover {
   opacity: 0.8;

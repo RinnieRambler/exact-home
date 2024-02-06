@@ -42,3 +42,41 @@ p a:hover {
   overflow: hidden;
   z-index: 9999;
 }
+
+.slick-next:before, .slick-prev:before {
+  font-family: inherit;
+  font-size: 4rem;
+}
+
+
+:root {
+    --bannerBlockLength: 280px;
+    --bannerBlockTime: 2s;
+  }
+
+.tickerBanner{
+overflow-X: hidden;
+display: flex;
+flex-direction: row-reverse;
+text-align: center;
+}
+
+
+.tickerBanner h2{
+  display: inline-block;
+  padding: 1vw;
+  flex-shrink: 0;
+  position: relative;
+  animation: ticker 2s infinite linear;
+  animation-duration: var(--bannerBlockTime), 2s;
+}
+
+.tickerBanner:hover h2{
+  animation-play-state: paused;
+}
+
+
+@keyframes ticker {
+    from {left:0}
+    to   {left:var(--bannerBlockLength)}
+}

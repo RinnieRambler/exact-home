@@ -51,29 +51,17 @@ layout: default
 </section>
 
 <section class="flex overflow-hidden bg-yellowbright">
-    <div class=" scroll-text min-h-10 font-header-sans text-navyblue flex items-center justify-start whitespace-nowrap">
-        <h2 class="text-3xl px-36">
+    <div class=" scroll-text min-h-10 font-header-sans text-navyblue flex items-center justify-start whitespace-nowrap tickerBanner">
+        <h2 class="text-3xl px-36 text-block">
            Call us direct - 0800 878 6050
         </h2>
-        <h2 class="text-3xl pr-36">
+        <h2 class="text-3xl pr-36 text-block">
             Exclusive offers
         </h2>
-        <h2 class="text-3xl pr-36">
+        <h2 class="text-3xl pr-36 text-block">
             Call us direct - 0800 878 6050
         </h2>
-        <h2 class="text-3xl">
-            New items added daily
-        </h2>
-        <h2 class="text-3xl px-36">
-            Call us direct - 0800 878 6050
-        </h2>
-        <h2 class="text-3xl pr-36">
-            Exclusive offers
-        </h2>
-        <h2 class="text-3xl pr-36">
-            Call us direct - 0800 878 6050
-        </h2>
-        <h2 class="text-3xl pr-36"">
+        <h2 class="text-3xl pr-36 text-block">
             New items added daily
         </h2>
     </div>
@@ -96,11 +84,10 @@ layout: default
             <p>We invite you to explore our collection on our <a href="https://www.ebay.co.uk/str/exacthomeandleisure" class="text-orangebright underline">eBay store</a> or to reach out to us directly using the contact details below.</p>
         </div>
     </div>
-    <div class="justify-center">
-        <a href="#contact" class="bg-orangerust text-navyblue hover:bg-navyblue hover:text-orangebright text-3xl font-header-sans px-16 py-3 m-2p flex items-center justify-center">Contact us</a>
+    <div class="flex justify-center">
+        <a href="#contact" class="bg-orangerust text-navyblue hover:bg-navyblue hover:text-orangebright text-3xl font-header-sans px-16 py-3 m-2p max-w-[16rem] flex items-center justify-center">Contact us</a>
     </div>
 </section>
-
 <!--------- facts section ------->
 
 <section class="bg-navyblue px-5p pt-5p border-y-8 border-orangerust">
@@ -160,14 +147,14 @@ layout: default
 <!---------- CHANGE ARROWS, WIDTH OF TESTIMONIAL TEXT / BLANK ONE??? WHy is it not working anymore????? ---------->
 <!---------- testimonials section ---------->
 
-<section class="min-h-30">
-    <div class="p-5p min-h-700 text-center bg-orangerust">
+<section class="">
+    <div class="p-5p text-center bg-orangerust">
         <h2 class="py-5 text-navyblue text-5xl font-serif ">What our <span class="text-white font-serif italic font-semibold">customers</span> say</h2>
-        <div class="flex flex-grow items-center justify-center">
-            <div class="slider text-center max-w-3xl ">
+        <div class="">
+            <div class="slider text-center max-w-3xl mx-auto ">
             {% for item in site.data.testimonials %}
-            <div class="m-4 p-5p">
-                        <p class="text-white">{{item.testimonial}}</p>
+            <div class="flex justify-center items-center min-h-full m-4 p-[5vw]">
+                 <p class="text-white">{{item.testimonial}}</p>
             </div>
             {% endfor %}
             </div>
@@ -187,7 +174,7 @@ layout: default
                     <label for="email">Email</label>
                     <input class="bg-white border-2 border-yellowbright py-1 px-2 w-full mb-5" type="email" id="email" name="email">
                     <label for="message">Message</label>
-                    <input class="bg-white border-2 border-yellowbright py-6 px-2 w-full mb-5" type="text" id="message" name="message">
+                    <textarea class="bg-white border-2 border-yellowbright py-1 px-2 w-full mb-5" type="text" id="message" name="message" rows="5"></textarea>
                     <input class="bg-yellowbright text-navyblue py-1 px-10 ml-auto" type="submit" value="send">
              </form>
         </div>
