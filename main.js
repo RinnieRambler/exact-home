@@ -5,3 +5,5 @@ $('.slider').slick({
     slidesToShow: 1,
     adaptiveHeight: true
 });
+
+console.log("dan told me to write soemthing in here")
