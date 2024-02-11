@@ -675,6 +675,14 @@ video {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
+.px-48 {
+  padding-left: 12rem;
+  padding-right: 12rem;
+}
+.px-60 {
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
 .pl-1 {
   padding-left: 0.25rem;
 }
@@ -716,6 +724,9 @@ video {
 }
 .pr-2p {
   padding-right: 2%;
+}
+.pr-48 {
+  padding-right: 12rem;
 }
 .text-center {
   text-align: center;
