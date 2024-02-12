@@ -6,7 +6,7 @@ layout: default
 
 <!---------Image banner ------>
 
-<section class="min-h-90">
+<section class="min-h-60 md:min-h-90">
     <div style="background-image:url(/assets/images/main-banner-image.jpg)" class="min-h-screen bg-cover bg-[65%_65%] bg-no-repeat opacity-60">
     </div>
 </section>
@@ -15,7 +15,7 @@ layout: default
 
 <section class="">
     <div class="bg-orangerust min-h-50 flex items-center justify-center">
-        <h3 class=" font-serif italic font-semibold text-white text-center text-6xl leading-20">Suppliers of quality home &<br> garden furniture since 2017</h3>
+        <h3 class=" font-serif italic font-semibold text-white text-center text-4xl md:text-5xl lg:text-6xl leading-15 md:leading-20">Suppliers of quality home &<br> garden furniture since 2017</h3>
     </div>
 </section>
 
@@ -44,7 +44,7 @@ layout: default
     <h2 class="font-header-sans text-7xl text-center text-navyblue">
         About us
     </h2>
-    <div class="font-body-sans grid grid-cols-2 gap-x-24 p-10p">
+    <div class="font-body-sans grid lg:grid-cols-2 gap-x-24 p-10p">
         <div class="space-y-4">
             <p>As a family owned and operated business we are pleased to offer a collection of exceptional, high quality home & garden furniture, as well as homeware items - but our commitment goes beyond that - it extends to providing a professional, reliable & personalised customer service experience.</p>
             <p>Since 2017, our knowledgeable team have been offering expert advice - we are here to assist you, ensuring a seamless journey from selection to delivery.</p>
@@ -63,8 +63,8 @@ layout: default
 
 <section class="bg-navyblue px-5p pt-5p border-y-8 border-orangerust">
     <div class="text-center text-3xl">
-        <div class="grid grid-cols-4 p-2p">
-            <div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 p-2p">
+            <div class="pb-10 sm:pb-6 lg:pb-0">
                 <h2><span class="text-creamy font-serif italic">established</span><br><span class="text-yellowbright font-header-sans">2017</span></h2>
             </div>
             <div>
@@ -88,7 +88,7 @@ layout: default
 
 <section class="min-h-30 font-header-sans text-center relative">
     <div style="background-image:url(/assets/images/ebay-bg-image.jpg)" class="min-h-screen bg-cover bg-center bg-no-repeat flex flex-grow items-center justify-center">
-        <img src="/assets/images/ebay-best-seller-png.png" class="min-h-10 absolute right-20 top-10 object-scale-down h-36"> 
+        <img src="/assets/images/ebay-best-seller-png.png" class="min-h-10 absolute right-10 md:right-20 top-10 object-scale-down h-36"> 
         <div class="min-w-full">
                 <h2 class="text-7xl text-navyblue tracking-wide pb-3p pt-1p">Our <span class="text-orangebright">ebay</span> store</h2>
                 <a href="https://www.ebay.co.uk/str/exacthomeandleisure" class="text-navyblue text-3xl underline bg-yellowbright px-16 py-2 m-2p tracking-wide hover:bg-navyblue hover:text-yellowbright">Click here</a>
@@ -101,28 +101,27 @@ layout: default
 
 <section class="text-center">
     <div class="bg-navyblue min-h-10">
-        <p class="text-creamy p-2p tracking-widest">Direct payments welcome & all major credit / debit cards accepted.</p>
+        <p class="text-creamy p-5p md:p-2p tracking-widest">Direct payments welcome & all major credit / debit cards accepted.</p>
     </div>
 </section>
 
 <!------ to be listed section --------->
 <section>
     <div class="grid justify-items-center border-b-[1.5rem] border-b-navyblue py-5p px-10p bg-white text-navyblue text-center font-serif font-semibold ">
-        <div class="max-w-60 ">
+        <div class="max-w-90 md:max-w-60 p-2p md:p-0">
             <p class="text-2xl"><span class="text-orangebright italic ">Additional,</span> yet to be listed, items may be available & items can also be <span class="text-orangebright italic ">sourced</span> to meet your individual needs.</p>
             <p class="text-2xl"><span class="text-orangebright italic ">Contact</span> us direct on our freephone number for more info.</p>
         </div>
     </div>
 </section>
 
-<!---------- how do i get the arrows to stay in same position ---------->
 <!---------- testimonials section ---------->
 
 <section class="">
     <div class="p-5p text-center bg-orangerust">
         <h2 class="py-5 text-navyblue text-5xl font-serif ">What our <span class="text-white font-serif italic font-semibold">customers</span> say</h2>
-        <div class="">
-            <div class="slider text-center max-w-3xl mx-auto ">
+        <div class="p-5p md:p-0">
+            <div class="slider text-center md:max-w-3xl mx-auto ">
             {% for item in site.data.testimonials %}
             <div class="flex justify-center items-center min-h-full m-4 p-[5vw]">
                  <p class="text-white">{{item.testimonial}}</p>
@@ -135,7 +134,7 @@ layout: default
 <!----------- contact section --------->
 
 <section id="contact" class="min-h-50 p-10p text-navyblue">
-    <div class="grid grid-cols-2 space-x-32">
+    <div class="grid xl:grid-cols-2 xl:space-x-32">
         <div>
             <h3 class="font-header-sans text-7xl pb-5p">Contact</h3>
              <form action="https://formspree.io/f/xeqygjwy" method="post">
@@ -145,11 +144,11 @@ layout: default
                     <input class="bg-white border-2 border-yellowbright py-1 px-2 w-full mb-5" type="email" id="email" name="email">
                     <label for="message">Message</label>
                     <textarea class="bg-white border-2 border-yellowbright py-1 px-2 w-full mb-5" type="text" id="message" name="message" rows="5"></textarea>
-                    <input class="bg-yellowbright text-navyblue py-1 px-10 ml-auto" type="submit" value="send">
+                    <input class="bg-yellowbright text-navyblue font-header-sans py-1 px-10 ml-auto" type="submit" value="send">
              </form>
         </div>
         <div>
-            <div class="pt-20p">
+            <div class="pt-5p xl:pt-20p">
                 <p>
                 We are always happy to have a chat or to answer any questions.
                 </p>
