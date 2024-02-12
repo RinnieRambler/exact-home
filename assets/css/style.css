@@ -621,6 +621,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(240 235 216 / var(--tw-bg-opacity));
 }
+.bg-offwhite {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 254 249 / var(--tw-bg-opacity));
+}
 .bg-cover {
   background-size: cover;
 }
@@ -757,6 +761,9 @@ video {
 .pb-10 {
   padding-bottom: 2.5rem;
 }
+.pb-2p {
+  padding-bottom: 2%;
+}
 .text-center {
   text-align: center;
 }
@@ -846,6 +853,12 @@ video {
 }
 .opacity-60 {
   opacity: 0.6;
+}
+.outline {
+  outline-style: solid;
+}
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 /* Custom CSS */
