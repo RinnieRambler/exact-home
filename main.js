@@ -50,3 +50,39 @@ $('.slider').slick({
   extendBanner()
 
   console.log(bannerLength)
+  
+
+  //burger menu
+
+  const btn = document.getElementById("menuBtn");
+const menu = document.getElementById("mobileMenu");
+
+if (btn && menu) {
+  const closeMenu = () => {
+    menu.classList.add("hidden");
+    btn.setAttribute("aria-expanded", "false");
+    btn.setAttribute("aria-label", "Open menu");
+  };
+
+  const openMenu = () => {
+    menu.classList.remove("hidden");
+    btn.setAttribute("aria-expanded", "true");
+    btn.setAttribute("aria-label", "Close menu");
+  };
+
+  btn.addEventListener("click", () => {
+    const isOpen = btn.getAttribute("aria-expanded") === "true";
+    isOpen ? closeMenu() : openMenu();
+  });
+
+  // Close on Escape
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeMenu();
+  });
+
+  // Optional: close after clicking a link
+  menu.addEventListener("click", (e) => {
+    if (e.target.closest("a")) closeMenu();
+  });
+}
+
